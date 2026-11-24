@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About me | Samar M. Abdou</title>
+<meta name="description" content="About Samar M. Abdou: statistics and philosophy at GWU, skills, and travel.">
+<link rel="canonical" href="https://samarm-web.github.io/SamarM/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About me | Samar M. Abdou">
+<meta property="og:description" content="About Samar M. Abdou: statistics and philosophy at GWU, skills, and travel.">
+<meta property="og:url" content="https://samarm-web.github.io/SamarM/about.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="">
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Samar M. Abdou</a>
+<nav class="nav" aria-label="Main"><a href="projects.html">Projects</a><a href="teaching.html">Teaching</a><a href="about.html" aria-current=page>About me</a></nav>
+</div></header>
+<main class="wrap">
+
+<section class="sec">
+  <h1 style="margin-bottom:14px">About me</h1>
+  <p>Hi, I&rsquo;m Samar. I&rsquo;m a statistician and data scientist with a B.S. in Statistics and a B.A. in Philosophy from The George Washington University. My work centers on statistical modeling, machine learning and causal inference, and I enjoy projects that take messy, real-world data all the way to clear results people can use.</p>
+  <p>I&rsquo;m currently a data scientist in GWU&rsquo;s Dynamic Online Networks Lab, where I build models of collective behavior online and offline, and a researcher with Future Worlds Center in Cyprus, where I develop cost models for structured dialogue. I&rsquo;ve also worked as a quality analyst at Mary&rsquo;s Center in Washington, DC, and as a data analyst intern at DC Witness. I work mainly in Python, R and SQL, hold a Six Sigma White Belt, and am a member of the American Statistical Association and the Association for Women in Mathematics.</p>
+  <p>Outside of research, I tutor math and statistics, and I love to travel. All references are available upon request.</p>
+</section>
+<section class="sec">
+  <h2>Travel</h2>
+  <div class="carousel">
+    <div class="strip" id="strip" tabindex="0" aria-label="Travel photos, scroll sideways"><figure><img src="img/travel/cairo-1.jpg" alt="Photo from Cairo, Egypt" loading="lazy"><figcaption>Cairo, Egypt</figcaption></figure><figure><img src="img/travel/giza.jpg" alt="Photo from Giza, Egypt" loading="lazy"><figcaption>Giza, Egypt</figcaption></figure><figure><img src="img/travel/cairo-2.jpg" alt="Photo from Cairo, Egypt" loading="lazy"><figcaption>Cairo, Egypt</figcaption></figure><figure><img src="img/travel/ayia-napa-1.jpg" alt="Photo from Ayia Napa, Cyprus" loading="lazy"><figcaption>Ayia Napa, Cyprus</figcaption></figure><figure><img src="img/travel/ayia-napa-2.jpg" alt="Photo from Ayia Napa, Cyprus" loading="lazy"><figcaption>Ayia Napa, Cyprus</figcaption></figure><figure><img src="img/travel/nantes.jpg" alt="Photo from Nantes, France" loading="lazy"><figcaption>Nantes, France</figcaption></figure><figure><img src="img/travel/nicosia.jpg" alt="Photo from Nicosia, Cyprus" loading="lazy"><figcaption>Nicosia, Cyprus</figcaption></figure><figure><img src="img/travel/prague-1.jpg" alt="Photo from Prague, Czech Republic" loading="lazy"><figcaption>Prague, Czech Republic</figcaption></figure><figure><img src="img/travel/prague-2.jpg" alt="Photo from Prague, Czech Republic" loading="lazy"><figcaption>Prague, Czech Republic</figcaption></figure></div>
+    <div class="car-nav"><span class="meta">Swipe or use the arrows</span>
+      <div class="btns"><button class="btn sm" id="prev" type="button" aria-label="Previous photo">&larr;</button><button class="btn sm" id="next" type="button" aria-label="Next photo">&rarr;</button></div></div>
+  </div>
+  <p class="also">I&rsquo;ve also been to Greece, Jordan, Iceland, Ireland and London.</p>
+</section>
+<section class="sec"><h2>Technical skills</h2><table class="skills"><tbody><tr><th scope=row>Programming</th><td>Python (pandas, NumPy, SciPy, scikit-learn, statsmodels, NetworkX, Matplotlib), R (tidyverse, ggplot2, survey), SQL, SAS, SPSS, Mplus</td></tr><tr><th scope=row>Statistics &amp; ML</th><td>Regression, hypothesis testing, categorical data analysis, latent class analysis, causal inference, time-series, bootstrap and permutation methods, random forest, gradient boosting, ridge/lasso, cross-validation, NLP</td></tr><tr><th scope=row>Data</th><td>SQL database design, data cleaning, Tableau, Power BI, Excel, Airtable</td></tr><tr><th scope=row>Quality</th><td>Healthcare quality measures, chart audits, process improvement, Six Sigma White Belt</td></tr><tr><th scope=row>Tools</th><td>Jupyter, Git/GitHub, LaTeX</td></tr><tr><th scope=row>Languages</th><td>English, Arabic (advanced), French (intermediate)</td></tr></tbody></table></section>
+
+
+</main>
+<footer class="foot"><div class="wrap">
+<span>&copy; 2026 Samar M. Abdou</span>
+<span>Last updated November 2026</span>
+</div></footer>
+<script>{
+const s=document.getElementById('strip');
+const step=d=>{const f=[...s.children];const x=s.scrollLeft;let t=d>0?f.find(e=>e.offsetLeft-s.offsetLeft>x+4):[...f].reverse().find(e=>e.offsetLeft-s.offsetLeft<x-4);if(t)s.scrollTo({left:t.offsetLeft-s.offsetLeft,behavior:'smooth'});};
+document.getElementById('prev').addEventListener('click',()=>step(-1));
+document.getElementById('next').addEventListener('click',()=>step(1));
+s.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();step(1)}if(e.key==='ArrowLeft'){e.preventDefault();step(-1)}});
+}</script>
+</body>
+</html>

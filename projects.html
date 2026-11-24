@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Samar M. Abdou</title>
+<meta name="description" content="Projects by Samar M. Abdou in statistics, machine learning, SQL and quality research.">
+<link rel="canonical" href="https://samarm-web.github.io/SamarM/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects | Samar M. Abdou">
+<meta property="og:description" content="Projects by Samar M. Abdou in statistics, machine learning, SQL and quality research.">
+<meta property="og:url" content="https://samarm-web.github.io/SamarM/projects.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="">
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Samar M. Abdou</a>
+<nav class="nav" aria-label="Main"><a href="projects.html" aria-current=page>Projects</a><a href="teaching.html">Teaching</a><a href="about.html">About me</a></nav>
+</div></header>
+<main class="wrap">
+<section class="sec"><h1 style="margin-bottom:22px">Projects</h1><ul class="plist"><li class="proj">
+  <div class="pimg"><img src="img/proj/crc.jpg" alt="Bar chart of screening completion by age group" loading="lazy"></div>
+  <div>
+    <div class="proj-head"><h3>Colorectal Cancer Screening Completion at a DC Community Health Center</h3><a class="btn sm dark" href="project-crc-screening.html">View</a></div>
+    <span class="meta">Quality improvement research &middot; 2026</span>
+    <p>I designed and led a retrospective observational study of colorectal cancer screening completion, a federal HRSA Uniform Data System quality measure (CMS130v13), for 11,348 screening-eligible patients seen between 2023 and 2025. I built the analytic dataset in Python, applied the measure&rsquo;s eligibility rules, look-back intervals and exclusions, and documented missing data across every variable.</p><p>Using chi-square tests of independence and Cram&eacute;r&rsquo;s V, I compared completion across age, race/ethnicity, insurance, ZIP code and primary care site. Only 18.8% of patients had completed screening, and clinic site showed the strongest association (V = 0.147), with rates from 15.5% to 27.3%. I presented recommendations to clinical leadership on workflow reviews, outreach and documentation audits. This work was funded by GWU&rsquo;s competitive Knowledge in Action Career Internship Fund (KACIF) grant.</p>
+    <ul class="tags"><li>Statistics</li><li>Python</li><li>Jupyter</li><li>Categorical data analysis</li><li>Chi-square tests</li><li>Effect sizes</li><li>Quality improvement</li><li>Health data</li><li>Data visualization</li></ul>
+  </div>
+</li><li class="proj">
+  <div class="pimg"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#f3f7fc"/>
+<path d="M-10 150 C40 120 70 170 120 130 S200 60 250 90 S300 60 330 50" fill="none" stroke="#9cc0e8" stroke-width="22" stroke-linecap="round"/>
+<path d="M-10 150 C40 120 70 170 120 130 S200 60 250 90 S300 60 330 50" fill="none" stroke="#2c5aa0" stroke-width="3"/>
+<g fill="#fff" stroke="#111" stroke-width="2"><circle cx="40" cy="138" r="6"/><circle cx="120" cy="130" r="6"/><circle cx="185" cy="88" r="6"/><circle cx="250" cy="90" r="6"/><circle cx="300" cy="62" r="6"/></g>
+<g stroke="#111" stroke-width="1.5" fill="none"><path d="M20 40 H120 M20 40 V20" /><path d="M24 36 L44 30 L64 33 L84 24 L104 27 L118 22" stroke="#2c5aa0" stroke-width="2"/></g></svg></div>
+  <div>
+    <div class="proj-head"><h3>R&iacute;o Santiago Water Quality Atlas</h3><a class="btn sm dark" href="project-rio-santiago.html">View</a></div>
+    <span class="meta">With the University of Guadalajara &middot; 2025&ndash;present</span>
+    <p>In collaboration with the University of Guadalajara, I built an end-to-end data pipeline for water-quality monitoring on the R&iacute;o Santiago in Mexico. I designed a SQL database that consolidates 87,926 records from 13 monitoring stations (2009&ndash;2025), cleaning and standardizing the raw data into one queryable source for analysis.</p><p>I tested for long-term trends at each station with seasonal Mann&ndash;Kendall tests, using false discovery rate correction across all tests. I then benchmarked ridge regression, random forest and gradient boosting models with time-based validation, so models are always evaluated on data later than they were trained on. The results are published as an interactive atlas with its own data-quality page.</p>
+    <ul class="tags"><li>Python</li><li>SQL</li><li>Database design</li><li>scikit-learn</li><li>Random forest</li><li>Gradient boosting</li><li>Ridge regression</li><li>Time-series</li><li>Mann&ndash;Kendall</li><li>R</li><li>HTML/CSS</li></ul>
+  </div>
+</li><li class="proj">
+  <div class="pimg"><img src="img/proj/yemen.jpg" alt="Chart of the estimated power-law exponent over time" loading="lazy"></div>
+  <div>
+    <div class="proj-head"><h3>Patterns in Conflict Dynamics</h3><a class="btn sm dark" href="project-conflict-dynamics.html">View</a></div>
+    <span class="meta">Dynamic Online Networks Lab, GWU &middot; 2025&ndash;2026</span>
+    <p>As a data scientist in GWU&rsquo;s Dynamic Online Networks Lab, under Dr. Neil Johnson, I use statistics and machine learning to study how groups behave online and offline. For this project I worked with event-level conflict records from ACLED and UCDP to test a fusion&ndash;fission model, which predicts that fatalities per event follow a power-law distribution as armed groups merge and break apart. I estimated the power-law exponent across conflict periods and in rolling 180-day windows, and tracked how it shifted at major turning points.</p><p>To confirm the shifts were not due to chance, I compared the real results against thousands of randomly shuffled versions of the data. I did the work in Python (pandas, NumPy, SciPy, statsmodels, NetworkX, Matplotlib) with version control in Git. It became my first-authored paper in <i>Royal Society Open Science</i> (2026), which I presented at the International Society for the Systems Sciences (ISSS) 2026 Conference in Cyprus.</p>
+    <ul class="tags"><li>Python</li><li>pandas</li><li>NumPy</li><li>SciPy</li><li>statsmodels</li><li>NetworkX</li><li>Power laws</li><li>Permutation tests</li><li>Matplotlib</li><li>Git</li></ul>
+  </div>
+</li><li class="proj">
+  <div class="pimg"><img src="img/proj/yellowknife.jpg" alt="Network graph of interactions between posters and commenters" loading="lazy"></div>
+  <div>
+    <div class="proj-head"><h3>Yellowknife Wildfire Social Media Analysis</h3><a class="btn sm dark" href="project-yellowknife.html">View</a></div>
+    <span class="meta">GW Data Science for Sustainable Development (DSSD) &middot; Spring 2024</span>
+    <p>With GW&rsquo;s Data Science for Sustainable Development (DSSD) research team, in partnership with Sustainable GW, I analyzed how people used social media during the August 2023 Yellowknife wildfire evacuation in Canada. Because platform restrictions blocked standard data collection, we scraped public posts with web-scraping tools: 950 Facebook search results, 405 posts and top comments from a community safety-check group, and about 500 tweets. We removed poster names for privacy, then cleaned the text, filled missing values and standardized timestamps.</p><p>We classified the sentiment of each post with the Twitter-roBERTa transformer model, tracked sentiment and keywords over time, and used topic modeling and keyword-based categorization to sort posts into themes such as government aid, community aid and dissatisfaction. Network analysis with degree and betweenness centrality identified the posters who did the most to spread safety and evacuation information. Most posts were neutral and informational, safety and evacuation keywords peaked on August 17, and community aid was the most discussed theme.</p>
+    <ul class="tags"><li>Python</li><li>Web scraping</li><li>NLP</li><li>Sentiment analysis</li><li>RoBERTa</li><li>Topic modeling</li><li>Network analysis</li><li>Centrality measures</li><li>Time-series</li><li>Data cleaning</li></ul>
+  </div>
+</li><li class="proj">
+  <div class="pimg"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#f6f6f3"/>
+<g fill="#2c5aa0"><circle cx="70" cy="70" r="9"/><circle cx="92" cy="58" r="9"/><circle cx="88" cy="84" r="9"/><circle cx="64" cy="94" r="9"/></g>
+<g fill="none" stroke="#111" stroke-width="2.5"><circle cx="230" cy="64" r="9"/><circle cx="252" cy="78" r="9"/><circle cx="226" cy="90" r="9"/></g>
+<g fill="#9cc0e8"><rect x="140" y="128" width="17" height="17" rx="3"/><rect x="164" y="140" width="17" height="17" rx="3"/><rect x="150" y="156" width="17" height="17" rx="3"/></g>
+<g stroke="#bbb" stroke-dasharray="4 4" fill="none"><ellipse cx="80" cy="76" rx="42" ry="38"/><ellipse cx="238" cy="77" rx="36" ry="32"/><ellipse cx="162" cy="150" rx="36" ry="32"/></g></svg></div>
+  <div>
+    <div class="proj-head"><h3>Dietary Patterns and Child Stunting in Nigeria</h3></div>
+    <span class="meta">Statistician and methodologist &middot; 2026</span>
+    <p>I served as the statistician and methodologist on a study of diet and child growth, using data on 2,950 children from the 2024 Nigeria Demographic and Health Survey. I used survey-weighted latent class analysis in Mplus to identify distinct dietary patterns while respecting the survey&rsquo;s complex sampling design.</p><p>I then ran causal mediation analysis to test how these dietary patterns relate to stunting, with 2,000-replicate bootstrap confidence intervals. I also validated the data and corrected errors before submission. The manuscript is in preparation for the <i>Journal of Nutrition</i>.</p>
+    <ul class="tags"><li>R</li><li>Mplus</li><li>Latent class analysis</li><li>Causal mediation</li><li>Survey weights</li><li>Bootstrap</li></ul>
+  </div>
+</li><li class="proj">
+  <div class="pimg"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#f6f6f3"/>
+<g stroke="#111" stroke-width="1.6" fill="none"><path d="M60 100 L130 50 L200 50 L260 100 L200 150 L130 150 Z"/><path d="M60 100 H260 M130 50 L200 150 M200 50 L130 150"/></g>
+<g fill="#fff" stroke="#111" stroke-width="2"><circle cx="60" cy="100" r="11"/><circle cx="130" cy="50" r="11"/><circle cx="200" cy="50" r="11"/><circle cx="260" cy="100" r="11"/><circle cx="200" cy="150" r="11"/><circle cx="130" cy="150" r="11"/></g>
+<circle cx="160" cy="100" r="15" fill="#2c5aa0"/></svg></div>
+  <div>
+    <div class="proj-head"><h3>Cost Models for Structured Dialogic Design</h3></div>
+    <span class="meta">Future Worlds Center, Nicosia &middot; 2026&ndash;present</span>
+    <p>With Dr. Yiannis Laouris and Kevin M.C. Dye, I&rsquo;m revising the Structured Dialogic Design methodology, a structured approach to group dialogue and decision-making, for use in consultations at the Cyprus Parliament. The goal is a repeatable process that works for parliamentary hearings, public consultations and expert working groups.</p><p>I&rsquo;m developing cost function models that quantify the time and resources each stage of the dialogue process requires. These models show where the process can be streamlined, making consultations more efficient without losing the inclusive, consensus-building steps the method is known for.</p>
+    <ul class="tags"><li>Cost modeling</li><li>Optimization</li><li>Process improvement</li><li>Qualitative analysis</li><li>Systems thinking</li></ul>
+  </div>
+</li></ul></section>
+</main>
+<footer class="foot"><div class="wrap">
+<span>&copy; 2026 Samar M. Abdou</span>
+<span>Last updated November 2026</span>
+</div></footer>
+
+</body>
+</html>
